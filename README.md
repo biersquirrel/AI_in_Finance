@@ -11,7 +11,7 @@ http://www.StockIT.tech
 
 ## Getting Started
 
-In order to run a dev server on your local host, you will need to first install all the required npm packages for the frontend.
+In order to run a dev server on your local host, you will need to first install all the required npm packages for the front-end.
 
 `cd client`
 
