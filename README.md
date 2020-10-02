@@ -28,7 +28,7 @@ Next you will need to install the required Python packages:
 
 Now you can open up an additional terminal and start up a server for the back-end on port 5000:
 
-`python -m flask run FLASK_APP=app.py`
+`export FLASK_APP=app.py`
 
 `flask run`
 
