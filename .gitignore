@@ -1,2 +1,4 @@
 /.project
-/client/node_modules
+/__pycache__/
+/client/node_modules/
+package-lock.json
