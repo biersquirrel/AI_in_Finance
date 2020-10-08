@@ -7,7 +7,7 @@ import math
 import random
 import os
 import numpy as np
-from sklearn import preprocessing, cross_validation, svm
+from sklearn import preprocessing, model_selection, svm
 from sklearn.linear_model import LinearRegression
 
 if 'ON_HEROKU' in os.environ:
@@ -73,7 +73,7 @@ def getStockData():
     mlData = mlData[:-dataLength]
     y = np.array(mlData['label'])
 
-    X_train, X_test, y_train, y_test = cross_validation.train_test_split(X, y, test_size=0.3)
+    X_train, X_test, y_train, y_test = model_selection.train_test_split(X, y, test_size=0.3)
 
     clf = LinearRegression()
     clf.fit(X_train, y_train)
